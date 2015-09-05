@@ -1,7 +1,7 @@
-## Clase de NodeJS - Daniel Zavala @siedrix
+## Clase de NodeJS - Ledesma Ernesto @erneledesma
 <br />
 
-Es importante leer los siguientes contenidos dentro de la plataforma:
+Es importante leer los siguientes contenidos de los apuntes entregados
 
-- Pasando de PHP a NodeJS
+-Introduccion a  NodeJS
 - Instalación de NodeJS
