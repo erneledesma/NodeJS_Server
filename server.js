@@ -5,7 +5,7 @@ var app = express();
 var mensajes = [];
 
 app.get('/', function(req, res){
-  	res.send('Hello world');
+  	res.send('Hola Gente grosa de PA');
 });
 
 app.get('/mensajes/new/:mensaje', function (req, res) {
@@ -15,14 +15,10 @@ app.get('/mensajes/new/:mensaje', function (req, res) {
 });
 
 app.get('/mensajes/list', function (req, res) {
-	res.send(mensajes+'<script>setTimeout(function(){window.location.reload()},5000)</script>');
+	res.send(mensajes+
+		'<script>setTimeout(function(){window.location.reload()},2000)</script>');
 });
 
 app.listen(3000);
 
-
-
-
-
-
-console.log("Express server running at\n  => http://localhost:3000/\nCTRL + C to shutdown");
+console.log("Express esta corriendo\n => http://localhost:3000/\nCTRL + C to shutdown");

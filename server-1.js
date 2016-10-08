@@ -4,13 +4,17 @@ var mensajes = [];
 
 
 app.get('/', function(req, res){
-  	res.send('Hello world');
+  res.sendfile(__dirname + '/index.html');
+});
+
+app.get('/', function(req, res){
+  res.sendfile(__dirname + '/index2.html');
 });
 
 app.get('/mensajes/new/:mensaje', function (req, res) {
 	mensajes.push(req.params.mensaje);
 
-
+ 
 	res.send('Tu Mensaje es: '+ req.params.mensaje);
 });
 
